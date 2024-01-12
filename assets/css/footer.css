@@ -1,0 +1,26 @@
+.footer {
+    border-radius: 24px;
+    background: #2E2E30;
+    box-shadow: 0px 5px 17px 0px rgba(0, 0, 0, 0.06), 0px 5px 10px 0px rgba(0, 0, 0, 0.05);
+    color: white;
+}
+
+
+.footer-item {
+    width: 200px;
+    height: 190px;
+    background-color: red;
+}
+
+.transtone-creater {
+    color: rgba(255, 255, 255, 0.52);
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 166.023%;
+    padding: 16px 0;
+    border-top: 1px solid #3E3E40;
+    width: 100%;
+
+}

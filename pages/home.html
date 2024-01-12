@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/home.css">
+    <link rel="stylesheet" href="../assets/css/header.css">
+    <link rel="stylesheet" href="../assets/css/footer.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+
+</head>
+
+<body>
+    <div>
+        <div class="d-lg-flex">
+            <nav
+                class="navbar navbar-expand-lg  navbar-light bg-light navbar-container align-items-stretch  d-lg-block p-lg-0">
+                <div class="container-fluid d-lg-flex flex-wrap m-0 p-lg-0 ps-lg-4">
+                    <a class="navbar-brand col-lg-12 mb-lg-4" href="#">Navbar</a>
+                    <button class="navbar-toggler home-hamburger-btn" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse nav-col-sidebar" id="navbarSupportedContent">
+                        <ul class="nav nav-pills flex-column w-100">
+                            <li class="nav-item mb-3 w-100 pe-lg-4 ">
+                                <a class="nav-link p-0 w-100 active" data-bs-toggle="pill" href="#home"><span>●</span>
+                                    Ana səhifə</a>
+                            </li>
+                            <li class="nav-item mb-3 w-100 pe-lg-4 home-companies-choose">
+                                <a class="nav-link p-0 w-100 company-select-link"
+                                    onclick="toggleCompany()"><span>●</span> Şirkətimiz <span
+                                        class="float-end">⮞</span></a>
+                                <div id="companyDropdown" class="select-companies-item bg-light d-none">
+                                    <p class="mt-3">Şirkətimiz</p>
+                                    <hr class="w-100 d-none d-lg-block">
+                                    <a class="nav-link company-select-one p-0 w-100 mb-3" data-bs-toggle="pill"
+                                        href="#companies-1"><span>●</span> Haqqımızda <span
+                                            class="float-end">⮞</span></a>
+                                    <a class="nav-link company-select-two p-0 w-100" data-bs-toggle="pill"
+                                        href="#companies-2"><span>●</span> Niyə biz <span class="float-end">⮞</span></a>
+                                </div>
+                            </li>
+
+                            <li class="nav-item mb-3 w-100 pe-lg-4 home-services-choose">
+                                <a class="nav-link p-0 w-100 service-select-link"
+                                    onclick="toggleServices()"><span>●</span> Xidmətlər <span
+                                        class="float-end">⮞</span></a>
+                                <div id="servicesDropdown" class="select-services-item bg-light d-none">
+                                    <p class="mt-3">Xidmətlər</p>
+                                    <hr class="w-100 d-none d-lg-block">
+                                    <a class="nav-link service-select-one p-0 w-100 mb-3" data-bs-toggle="pill"
+                                        href="#services"><span>●</span> Transport <span class="float-end">⮞</span></a>
+                                    <a class="nav-link service-select-two p-0 w-100 mb-3" data-bs-toggle="pill"
+                                        href="#services"><span>●</span> Yükdaşıma <span class="float-end">⮞</span></a>
+                                    <a class="nav-link service-select-three p-0 w-100" data-bs-toggle="pill"
+                                        href="#services"><span>●</span> Evakuasiya <span class="float-end">⮞</span></a>
+                                </div>
+                            </li>
+                            <li class="nav-item mb-3 w-100 pe-lg-4 ">
+                                <a class="nav-link p-0 w-100" data-bs-toggle="pill" href="#autopark"><span>●</span>
+                                    Avtopark</a>
+                            </li>
+                            <li class="nav-item mb-3 w-100 pe-lg-4 ">
+                                <a class="nav-link p-0 w-100" data-bs-toggle="pill" href="#techniques"><span>●</span>
+                                    Texnikalar</a>
+                            </li>
+                            <li class="nav-item mb-3 w-100 pe-lg-4 ">
+                                <a class="nav-link p-0 w-100" data-bs-toggle="pill" href="#sectors"><span>●</span>
+                                    Sektorlar</a>
+                            </li>
+                            <li class="nav-item mb-3 w-100 pe-lg-4 ">
+                                <a class="nav-link p-0 w-100" data-bs-toggle="pill" href="#galery"><span>●</span>
+                                    Qalareya</a>
+                            </li>
+                            <li class="nav-item mb-3 w-100 pe-lg-4 ">
+                                <a class="nav-link p-0 w-100" data-bs-toggle="pill" href="#news"><span>●</span>
+                                    Xəbərlər</a>
+                            </li>
+                            <li class="nav-item mb-3 w-100 pe-lg-4 ">
+                                <a class="nav-link p-0 w-100" data-bs-toggle="pill" href="#contact"><span>●</span>
+                                    Əlaqə</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="d-none d-lg-block h-auto ps-lg-4 position-fixed nav-bottom-item">
+                    <p class="creater-trastone mb-4">All rights reserved ©️ Transtone 2023</p>
+                    <div class="d-flex justify-content-between nav-social-network gap-4">
+                        <img src="../assets/media/header/instagram.png" alt="instagram">
+                        <img src="../assets/media/header/facebook.png" alt="facebook">
+                        <img src="../assets/media/header/x.png" alt="x">
+                        <img src="../assets/media/header/phone.png" alt="phone">
+                    </div>
+                </div>
+            </nav>
+
+            <main class="tab-content clearfix body-main">
+                <section id="home" class="tab-pane active">
+                    <div class="header-yellow-main">
+                        <div class="container d-flex justify-content-between mt-0">
+                            <p class="fw-bold header-yellow-title ms-1 my-auto d-flex mt-2 d-none d-sm-block">Ana səhifə
+                            </p>
+                            <div class="d-flex justify-content-between gap-2 me-lg-4 mt-2">
+                                <button class="header-callback d-flex gap-1 align-content-center my-auto"><img
+                                        class="my-auto" src="../assets/media/header/callback.png" alt="tel">Geri
+                                    zəng</button>
+                                <button class="header-callback d-flex gap-1 align-content-between my-auto"><img
+                                        class="my-auto" src="../assets/media/header/creditcard.png"
+                                        alt="creditcard">Onlayn
+                                    ödəniş</button>
+                                <select class="header-callback my-auto">
+                                    <option>AZ</option>
+                                    <option>EN</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper mySwiperHome">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="../assets/media/home/sliderPhoto.png" alt=""></div>
+                            <div class="swiper-slide"><img src="../assets/media/home/sliderPhoto.png" alt=""></div>
+                            <div class="swiper-slide"><img src="../assets/media/home/sliderPhoto.png" alt=""></div>
+                            <div class="swiper-slide"><img src="../assets/media/home/sliderPhoto.png" alt=""></div>
+                            <div class="swiper-slide"><img src="../assets/media/home/sliderPhoto.png" alt=""></div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    <section class="container h-auto services-container mt-4 py-4">
+                        <div class="w-100 text-center mb-4 services-container-title d-block">
+                            Xidmətlər <br>
+                            <div class="mx-auto mt-1" style="width: 60px;height: 3px; background-color: #FBCA11;">
+                            </div>
+                        </div>
+                        <div class="d-flex flex-wrap gap-4 justify-content-around mb-4">
+                            <div class="services-transport-container p-4">
+                                <div class="w-100"><img src="../assets/media/home/transport.png" alt="transport-icon">
+                                </div>
+                                <p class="d-flex w-100 transport-title my-2">Transport</p>
+                                <p class="w-100 transport-text m-0">Lorem Ipsum is simply dummy text of the printing
+                                    and
+                                    typesetting industry. Lorem Ipsum has been the industry's standard dummy text
+                                    ever
+                                    since the 1500s,</p>
+                            </div>
+                            <div class="services-transport-container p-4">
+                                <div class="w-100"><img src="../assets/media/home/transport.png" alt="transport-icon">
+                                </div>
+                                <p class="d-flex w-100 transport-title my-2">Transport</p>
+                                <p class="w-100 transport-text m-0">Lorem Ipsum is simply dummy text of the printing
+                                    and
+                                    typesetting industry. Lorem Ipsum has been the industry's standard dummy text
+                                    ever
+                                    since the 1500s,</p>
+                            </div>
+                            <div class="services-transport-container p-4">
+                                <div class="w-100"><img src="../assets/media/home/transport.png" alt="transport-icon">
+                                </div>
+                                <p class="d-flex w-100 transport-title my-2">Transport</p>
+                                <p class="w-100 transport-text m-0">Lorem Ipsum is simply dummy text of the printing
+                                    and
+                                    typesetting industry. Lorem Ipsum has been the industry's standard dummy text
+                                    ever
+                                    since the 1500s,</p>
+                            </div>
+                            <div class="services-transport-container p-4">
+                                <div class="w-100"><img src="../assets/media/home/transport.png" alt="transport-icon">
+                                </div>
+                                <p class="d-flex w-100 transport-title my-2">Transport</p>
+                                <p class="w-100 transport-text m-0">Lorem Ipsum is simply dummy text of the printing
+                                    and
+                                    typesetting industry. Lorem Ipsum has been the industry's standard dummy text
+                                    ever
+                                    since the 1500s,</p>
+                            </div>
+                            <div class="services-transport-container p-4">
+                                <div class="w-100"><img src="../assets/media/home/transport.png" alt="transport-icon">
+                                </div>
+                                <p class="d-flex w-100 transport-title my-2">Transport</p>
+                                <p class="w-100 transport-text m-0">Lorem Ipsum is simply dummy text of the printing
+                                    and
+                                    typesetting industry. Lorem Ipsum has been the industry's standard dummy text
+                                    ever
+                                    since the 1500s,</p>
+                            </div>
+                            <div class="services-transport-container p-4">
+                                <div class="w-100"><img src="../assets/media/home/transport.png" alt="transport-icon">
+                                </div>
+                                <p class="d-flex w-100 transport-title my-2">Transport</p>
+                                <p class="w-100 transport-text m-0">Lorem Ipsum is simply dummy text of the printing
+                                    and
+                                    typesetting industry. Lorem Ipsum has been the industry's standard dummy text
+                                    ever
+                                    since the 1500s,</p>
+                            </div>
+                        </div>
+                        <div class="px-4 d-flex justify-content-between mt-4">
+                            <div class="my-auto transport-btn-line"></div>
+                            <button class="transport-all-services-btn">Bütün Xidmətlər</button>
+                            <div class="my-auto transport-btn-line"></div>
+                        </div>
+                    </section>
+                    <section class="container h-auto services-container mt-4 py-4">
+                        <div class="w-100 text-center mb-4 services-container-title d-block">
+                            Avtopark <br>
+                            <div class="mx-auto mt-1" style="width: 60px;height: 3px; background-color: #FBCA11;">
+                            </div>
+                        </div>
+                        <div class="position-relative">
+                            <div class="auto-slide-container ">
+                                <div class="swiper mySwiperAuto">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="auto-slide p-4">
+                                                <img src="../assets/media/home/auto.png" alt="">
+                                                <p class="d-flex justify-content-center">Soyuduculu (5m/5t)</p>
+                                                <div class="d-flex justify-content-between mt-4">
+                                                    <div class="my-auto auto-btn-line"></div>
+                                                    <button class="transport-all-services-btn">Ətraflı</button>
+                                                    <div class="my-auto auto-btn-line"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="auto-slide p-4">
+                                                <img src="../assets/media/home/auto.png" alt="">
+                                                <p class="d-flex justify-content-center">Soyuduculu (5m/5t)</p>
+                                                <div class="d-flex justify-content-between mt-4">
+                                                    <div class="my-auto auto-btn-line"></div>
+                                                    <button class="transport-all-services-btn">Ətraflı</button>
+                                                    <div class="my-auto auto-btn-line"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="auto-slide p-4">
+                                                <img src="../assets/media/home/auto.png" alt="">
+                                                <p class="d-flex justify-content-center">Soyuduculu (5m/5t)</p>
+                                                <div class="d-flex justify-content-between mt-4">
+                                                    <div class="my-auto auto-btn-line"></div>
+                                                    <button class="transport-all-services-btn">Ətraflı</button>
+                                                    <div class="my-auto auto-btn-line"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="auto-slide p-4">
+                                                <img src="../assets/media/home/auto.png" alt="">
+                                                <p class="d-flex justify-content-center">Soyuduculu (5m/5t)</p>
+                                                <div class="d-flex justify-content-between mt-4">
+                                                    <div class="my-auto auto-btn-line"></div>
+                                                    <button class="transport-all-services-btn">Ətraflı</button>
+                                                    <div class="my-auto auto-btn-line"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="auto-button-next position-absolute">﹥</div>
+                            <div class="auto-button-prev position-absolute">﹤</div>
+                        </div>
+                    </section>
+                </section>
+                <div id="companies" class="mt-5 tab-pane">
+                    <h2>About</h2>
+                    <p>Your about content goes here.</p>
+                </div>
+                <div id="services" class="mt-5 tab-pane">
+                    <h2>Services</h2>
+                    <p>Your services content goes here.</p>
+                </div>
+                <div id="autopark" class="mt-5 tab-pane">
+                    <h2>Contact</h2>
+                    <p>Your contact content goes here.</p>
+                </div>
+                <footer class="my-4 footer pt-5">
+                    <div class="py-4 gap-5 d-flex flex-wrap justify-content-center">
+                        <div class="footer-item">
+                            <img src="../assets/media/footer/logo.png" alt="Trastone" class="mb-4">
+                            <p class="mb-4 footer-adress w-100"></p>
+                            <p class="footer-number mb-4 w-100"></p>
+                        </div>
+                        <div class="footer-item"></div>
+                        <div class="footer-item"></div>
+                        <div class="footer-item"></div>
+                    </div>
+                    <div class="d-flex justify-content-center my-auto transtone-creater">All rights reserved © Transtone 2023</div>
+                </footer>
+            </main>
+        </div>
+    </div>
+
+    <script src="../assets/js/home.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
