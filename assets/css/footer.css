@@ -9,7 +9,6 @@
 .footer-item {
     width: 200px;
     height: 190px;
-    background-color: red;
 }
 
 .transtone-creater {
@@ -22,5 +21,63 @@
     padding: 16px 0;
     border-top: 1px solid #3E3E40;
     width: 100%;
+}
 
+.footer-adress {
+    color: rgba(255, 255, 255, 0.76);
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 166.023%;
+}
+
+.footer-number {
+    color: rgba(255, 255, 255, 0.76);
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 166.023%;
+}
+
+.footer-social-item {
+    gap: 10px;
+    height: 25px;
+}
+
+.footer-social-item img {
+    width: 25px;
+    height: 25px;
+    padding: 6px;
+    background: #3B3B3E;
+    border-radius: 50%;
+}
+
+.footer-language-select {
+    width: 54px;
+    background: #3B3B3E;
+    border-radius: 6px;
+    color: white;
+    border: 0;
+    padding-left: 3px;
+}
+
+.footer-item-title {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 166.023%;
+}
+
+.footer-link-page {
+    color: rgba(255, 255, 255, 0.60);
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 166.023%;
+    text-decoration: none;
 }

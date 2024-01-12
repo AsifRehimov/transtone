@@ -12,6 +12,7 @@
         position: fixed !important;
         top: 0;
         left: 0;
+        z-index: 2;
     }
     .body-main{
         width: calc(100% - 296px);
@@ -19,6 +20,10 @@
         position: absolute;
         top: 0;
         right: 0;
+        z-index: 1;
+    }
+    .header-list{
+        width: 296px;
     }
 }
 
