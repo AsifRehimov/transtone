@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="../assets/css/home.css">
     <link rel="stylesheet" href="../assets/css/header.css">
+    <link rel="stylesheet" href="../assets/css/about.css">
     <link rel="stylesheet" href="../assets/css/footer.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -23,7 +24,8 @@
             <nav
                 class="navbar navbar-expand-lg  navbar-light bg-light navbar-container align-items-stretch  d-lg-block p-lg-0">
                 <div class="container-fluid d-lg-flex flex-wrap m-0 p-lg-0 ps-lg-4 header-list">
-                    <a class="navbar-brand col-lg-12 mb-lg-4" href="#"><img src="../assets/media/header/logo.png" alt=""></a>
+                    <a class="navbar-brand col-lg-12 mb-lg-4" href="#"><img src="../assets/media/header/logo.png"
+                            alt=""></a>
                     <button class="navbar-toggler home-hamburger-btn" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -33,7 +35,7 @@
                     <div class="collapse navbar-collapse nav-col-sidebar" id="navbarSupportedContent">
                         <ul class="nav nav-pills flex-column w-100">
                             <li class="nav-item mb-3 w-100 pe-lg-4 ">
-                                <a class="nav-link p-0 w-100 active" data-bs-toggle="pill" href="#home"><span>●</span>
+                                <a class="nav-link p-0 w-100 " data-bs-toggle="pill" href="#home"><span>●</span>
                                     Ana səhifə</a>
                             </li>
                             <li class="nav-item mb-3 w-100 pe-lg-4 home-companies-choose">
@@ -43,9 +45,8 @@
                                 <div id="companyDropdown" class="select-companies-item bg-light d-none">
                                     <p class="mt-3">Şirkətimiz</p>
                                     <hr class="w-100 d-none d-lg-block">
-                                    <a class="nav-link company-select-one p-0 w-100 mb-3" data-bs-toggle="pill"
-                                        href="#companies-1"><span>●</span> Haqqımızda <span
-                                            class="float-end">⮞</span></a>
+                                    <a class="nav-link company-select-one p-0 w-100 mb-3 active" data-bs-toggle="pill"
+                                        href="#about"><span>●</span> Haqqımızda <span class="float-end">⮞</span></a>
                                     <a class="nav-link company-select-two p-0 w-100" data-bs-toggle="pill"
                                         href="#companies-2"><span>●</span> Niyə biz <span class="float-end">⮞</span></a>
                                 </div>
@@ -105,7 +106,7 @@
             </nav>
 
             <main class="tab-content clearfix body-main">
-                <section id="home" class="tab-pane active">
+                <section id="home" class="tab-pane">
                     <div class="header-yellow-main">
                         <div class="container d-flex justify-content-between mt-0">
                             <p class="fw-bold header-yellow-title ms-1 my-auto d-flex mt-2 d-none d-sm-block">Ana səhifə
@@ -271,10 +272,60 @@
                         </div>
                     </section>
                 </section>
-                <div id="companies" class="mt-5 tab-pane">
-                    <h2>About</h2>
-                    <p>Your about content goes here.</p>
-                </div>
+                <section id="about" class="tab-pane active">
+                    <div class="header-yellow-main">
+                        <div class="container d-flex justify-content-between mt-0">
+                            <p class="fw-bold header-yellow-title ms-1 my-auto d-flex mt-2 d-none d-sm-block">HAQQIMIZDA
+                            </p>
+                            <div class="d-flex justify-content-between gap-2 me-lg-4 mt-2">
+                                <button class="header-callback d-flex gap-1 align-content-center my-auto"><img
+                                        class="my-auto" src="../assets/media/header/callback.png" alt="tel">Geri
+                                    zəng</button>
+                                <button class="header-callback d-flex gap-1 align-content-between my-auto"><img
+                                        class="my-auto" src="../assets/media/header/creditcard.png"
+                                        alt="creditcard">Onlayn
+                                    ödəniş</button>
+                                <select class="header-callback my-auto">
+                                    <option>AZ</option>
+                                    <option>EN</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container pe-lg-4">
+                        <img class="w-100" style="object-fit: cover;" height="354px"
+                            src="../assets/media/about/about.jpeg" alt="">
+                    </div>
+                    <div class="container my-5 pe-lg-4">
+                        <p class="about-title mb-5">Transtone Yükdaşıma və Logistika şirkəti </p>
+                        <p class="about-text my-5"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+                            convallis tempus urna sed venenatis. Interdum et malesuada fames ac ante ipsum primis in
+                            faucibus. Aenean ullamcorper vehicula turpis, quis hendrerit lectus viverra eu. Ut
+                            pellentesque semper felis, nec fringilla diam. Aliquam consectetur velit at enim sagittis
+                            pellentesque. Vestibulum mattis nisi et venenatis pellentesque. In dapibus rhoncus ex, quis
+                            tincidunt dolor interdum ut <br> <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Vestibulum convallis tempus urna sed venenatis. Interdum et malesuada fames ac ante ipsum
+                            primis in faucibus. Aenean ullamcorper vehicula turpis, quis hendrerit lectus viverra eu. Ut
+                            pellentesque semper felis, nec fringilla diam. Aliquam consectetur velit at enim sagittis
+                            pellentesque. Vestibulum mattis nisi et venenatis pellentesque. In dapibus rhoncus ex, quis
+                            tincidunt dolor interdum utLorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Vestibulum convallis tempus urna sed venenatis. Interdum et malesuada fames ac ante ipsum
+                            primis in faucibus. Aenean ullamcorper vehicula turpis, quis hendrerit lectus viverra eu. Ut
+                            pellentesque semper felis, nec fringilla diam. Aliquam consectetur velit at enim sagittis
+                            pellentesque. Vestibulum mattis nisi et venenatis pellentesque. In dapibus rhoncus ex, quis
+                            tincidunt dolor interdum ut <br> <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Vestibulum convallis tempus urna sed venenatis. Interdum et malesuada fames ac ante ipsum
+                            primis in faucibus. Aenean ullamcorper vehicula turpis, quis hendrerit lectus viverra eu. Ut
+                            pellentesque semper felis, nec fringilla diam. Aliquam consectetur velit at enim sagittis
+                            pellentesque. Vestibulum mattis nisi et venenatis pellentesque. In dapibus rhoncus ex, quis
+                            tincidunt dolor interdum ut Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Vestibulum convallis tempus urna sed venenatis. Interdum et malesuada fames ac ante ipsum
+                            primis in faucibus. Aenean ullamcorper vehicula turpis, quis hendrerit lectus viverra eu. Ut
+                            pellentesque semper felis, nec fringilla diam. Aliquam consectetur velit at enim sagittis
+                            pellentesque. Vestibulum mattis nisi et venenatis pellentesque. In dapibus rhoncus ex, quis
+                            tincidunt dolor interdum ut</p>
+                    </div>
+                </section>
                 <div id="services" class="mt-5 tab-pane">
                     <h2>Services</h2>
                     <p>Your services content goes here.</p>
