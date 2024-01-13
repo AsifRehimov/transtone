@@ -1,0 +1,27 @@
+.techinfo-info-text {
+    color: #000;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 166.023%;
+}
+
+.techinfo-img{
+    height: 638px;
+    object-fit: cover;
+}
+
+.techinfo-order-btn {
+    padding: 3px 32px;
+    border-radius: 6px;
+    background: #B28900;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 166.023%;
+    height: 32px;
+    border: 0;
+}
