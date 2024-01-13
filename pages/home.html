@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../assets/css/about.css">
     <link rel="stylesheet" href="../assets/css/footer.css">
     <link rel="stylesheet" href="../assets/css/transport.css">
+    <link rel="stylesheet" href="../assets/css/autopark.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
@@ -61,7 +62,7 @@
                                     <p class="mt-3">Xidmətlər</p>
                                     <hr class="w-100 d-none d-lg-block">
                                     <a class="nav-link service-select-one p-0 w-100 mb-3" data-bs-toggle="pill"
-                                        href="#services"><span>●</span> Transport <span class="float-end">⮞</span></a>
+                                        href="#transport"><span>●</span> Transport <span class="float-end">⮞</span></a>
                                     <a class="nav-link service-select-two p-0 w-100 mb-3" data-bs-toggle="pill"
                                         href="#services"><span>●</span> Yükdaşıma <span class="float-end">⮞</span></a>
                                     <a class="nav-link service-select-three p-0 w-100" data-bs-toggle="pill"
@@ -329,7 +330,7 @@
                             tincidunt dolor interdum ut</p>
                     </div>
                 </section>
-                <section id="services" class="mb-5 tab-pane active">
+                <section id="transport" class="mb-5 tab-pane">
                     <div class="header-yellow-main">
                         <div class="container d-flex justify-content-between mt-0">
                             <p class="fw-bold header-yellow-title ms-1 my-auto d-flex mt-2 d-none d-sm-block">TRANSPORT
@@ -397,10 +398,74 @@
 
                     </div>
                 </section>
-                <div id="autopark" class="mt-5 tab-pane">
-                    <h2>Contact</h2>
-                    <p>Your contact content goes here.</p>
-                </div>
+                <section id="autopark" class="tab-pane active ">
+                    <div class="header-yellow-main">
+                        <div class="container d-flex justify-content-between mt-0">
+                            <p class="fw-bold header-yellow-title ms-1 my-auto d-flex mt-2 d-none d-sm-block">AVTOPARK
+                            </p>
+                            <div class="d-flex justify-content-between gap-2 me-lg-4 mt-2">
+                                <button class="header-callback d-flex gap-1 align-content-center my-auto"><img
+                                        class="my-auto" src="../assets/media/header/callback.png" alt="tel">Geri
+                                    zəng</button>
+                                <button class="header-callback d-flex gap-1 align-content-between my-auto"><img
+                                        class="my-auto" src="../assets/media/header/creditcard.png"
+                                        alt="creditcard">Onlayn
+                                    ödəniş</button>
+                                <select class="header-callback my-auto">
+                                    <option>AZ</option>
+                                    <option>EN</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="autopark-info container mt-5 mb-5">Avtoparkımızda olan texnikalar xidmətinizə hazır
+                        vəziyyətdə
+                        sifariş verməyinizi gözləyir!</p>
+                    <div class="container mb-3">
+                        <div class="nav nav-pills d-flex gap-2 autopark-tabs">
+                            <a data-bs-toggle="pill" class="nav-link active" href="#all-auto">Hamsı</a>
+                            <a data-bs-toggle="pill" class="nav-link " href="#auto-fridge">Soyuducu</a>
+                            <a data-bs-toggle="pill" class="nav-link " href="#auto3m">3m</a>
+                            <a data-bs-toggle="pill" class="nav-link " href="#auto4m">4m</a>
+                            <a data-bs-toggle="pill" class="nav-link " href="#auto5m">5m</a>
+                            <a data-bs-toggle="pill" class="nav-link " href="#auto6m">6m</a>
+                            <a data-bs-toggle="pill" class="nav-link " href="#auto7m">7m</a>
+                            <a data-bs-toggle="pill" class="nav-link " href="#auto8m">8m</a>
+                            <a data-bs-toggle="pill" class="nav-link " href="#tir">TIR</a>
+                            <a data-bs-toggle="pill" class="nav-link " href="#dayman">Dayman</a>
+                            <a data-bs-toggle="pill" class="nav-link " href="#liftlorry">Liftli yük maşını</a>
+                            <a data-bs-toggle="pill" class="nav-link " href="#opentop">Üstü açılan</a>
+                            <a data-bs-toggle="pill" class="nav-link " href="#sideopen">Yan tərəfi açılan</a>
+                            <a data-bs-toggle="pill" class="nav-link " href="#dumbtruck">Özüboşaldan</a>
+                            <a data-bs-toggle="pill" class="nav-link " href="#evacuatorauto">Evakuator</a>
+                            <a data-bs-toggle="pill" class="nav-link " href="#manipulation">Manipulyator</a>
+                        </div>
+                    </div>
+                    <div class="tab-content clearfix autoprk-body-container">
+                        <div class="tab-pane container pe-lg-4 active" id="all-auto">
+                            <div class="p-4 autopark-component-container">
+                                <div class="d-flex justify-content-between flex-wrap w-100 mb-4">
+                                    <p class="autopark-component-title ps-lg-3">Soyuduculu (5m/5t)</p>
+                                    <button class="autopark-order-btn">Sifariş ver</button>
+                                </div>
+                                <div class="d-flex flex-wrap gap-4 justify-content-center w-100">
+                                    <img class="autopark-component-img" src="../assets/media/autopark/car1.png" alt="car">
+                                    <img class="autopark-component-img" src="../assets/media/autopark/volumecar.png" alt="volume">
+                                    <div class="autoprk-size-container d-flex flex-wrap">
+                                        <div class="autoprk-car-features d-flex justify-content-between"><span>En</span> <span>2.1 m</span></div>
+                                        <div class="autoprk-car-features d-flex justify-content-between"><span>Ağırlıq</span> <span>5 ton</span></div>
+                                        <div class="autoprk-car-features d-flex justify-content-between"><span>Uzunluq</span> <span>5.1 m</span></div>
+                                        <div class="autoprk-car-features d-flex justify-content-between"><span>Tutum</span> <span>22.9m3</span></div>
+                                        <div class="autoprk-car-features d-flex justify-content-between"><span>Hündürlük</span> <span>2.14 m</span></div>
+                                        <div class="autoprk-car-features d-flex justify-content-between"><span>Plate sayı</span> <span>8 ədəd</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="auto-fridge">ddddddsssss</div>
+                        <div class="tab-pane" id="auto3m">mmmmmm</div>
+                    </div>
+                </section>
                 <footer class="my-4 footer pt-5">
                     <div class="py-4 gap-5 d-flex flex-wrap justify-content-center">
                         <div class="footer-item">
