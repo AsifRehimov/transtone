@@ -39,7 +39,7 @@
                     <div class="collapse navbar-collapse nav-col-sidebar" id="navbarSupportedContent">
                         <ul class="nav nav-pills flex-column w-100">
                             <li class="nav-item mb-3 w-100 pe-lg-4 ">
-                                <a class="nav-link p-0 w-100 active"  href="home.html"><span>●</span>
+                                <a class="nav-link p-0 w-100"  href="home.html"><span>●</span>
                                     Ana səhifə</a>
                             </li>
                             <li class="nav-item mb-3 w-100 pe-lg-4 home-companies-choose">
@@ -76,7 +76,7 @@
                                     Avtopark</a>
                             </li>
                             <li class="nav-item mb-3 w-100 pe-lg-4 ">
-                                <a class="nav-link p-0 w-100"  href="techinfo.html"><span>●</span>
+                                <a class="nav-link p-0 w-100 active"  href="techinfo.html"><span>●</span>
                                     Texnikalar</a>
                             </li>
                             <li class="nav-item mb-3 w-100 pe-lg-4 ">
@@ -84,7 +84,7 @@
                                     Sektorlar</a>
                             </li>
                             <li class="nav-item mb-3 w-100 pe-lg-4 ">
-                                <a class="nav-link p-0 w-100"  href="galery.html"><span>●</span>
+                                <a class="nav-link p-0 w-100" href="galery.html"><span>●</span>
                                     Qalareya</a>
                             </li>
                             <li class="nav-item mb-3 w-100 pe-lg-4 ">
@@ -110,10 +110,10 @@
             </nav>
 
             <main class="tab-content clearfix body-main">
-                <section id="home" class="tab-pane active">
+                <section id="techInfo" class="tab-pane active">
                     <div class="header-yellow-main">
                         <div class="container d-flex justify-content-between mt-0">
-                            <p class="fw-bold header-yellow-title ms-1 my-auto d-flex mt-2 d-none d-sm-block">Ana səhifə
+                            <p class="fw-bold header-yellow-title ms-1 my-auto d-flex mt-2 d-none d-sm-block">TEXNİKALAR
                             </p>
                             <div class="d-flex justify-content-between gap-2 me-lg-4 mt-2">
                                 <button class="header-callback d-flex gap-1 align-content-center my-auto"><img
@@ -130,151 +130,36 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper mySwiperHome">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide"><img src="../assets/media/home/sliderPhoto.png" alt=""></div>
-                            <div class="swiper-slide"><img src="../assets/media/home/sliderPhoto.png" alt=""></div>
-                            <div class="swiper-slide"><img src="../assets/media/home/sliderPhoto.png" alt=""></div>
-                            <div class="swiper-slide"><img src="../assets/media/home/sliderPhoto.png" alt=""></div>
-                            <div class="swiper-slide"><img src="../assets/media/home/sliderPhoto.png" alt=""></div>
-                        </div>
-                        <div class="swiper-pagination"></div>
+                    <p class="container techinfo-info-text mt-5">Yükdaşınmaları üçün nəzərdə tutulmuş texnika</p>
+                    <img class="my-5 techinfo-img container d-flex justify-content-center"
+                        src="../assets/media/tech_informatin/car.png" alt="">
+                    <div
+                        class="container mb-5 techinfo-features-container d-flex justify-content-center justify-content-lg-end">
+                        <button class="techinfo-order-btn">Sifariş ver</button>
                     </div>
-                    <section class="container h-auto services-container mt-4 py-4">
-                        <div class="w-100 text-center mb-4 services-container-title d-block">
-                            Xidmətlər <br>
-                            <div class="mx-auto mt-1" style="width: 60px;height: 3px; background-color: #FBCA11;">
+                    <div
+                        class="d-flex gap-2 mb-5 flex-wrap justify-content-center justify-content-lg-between container">
+                        <img src="../assets/media/tech_informatin/volume.png" alt="volume" class="w-50 mb-4 mb-lg-4">
+                        <div class="autoprk-size-container d-flex flex-wrap ">
+                            <div class="autoprk-car-features d-flex justify-content-between"><span>En</span>
+                                <span>2.42 m</span>
                             </div>
+                            <div class="autoprk-car-features d-flex justify-content-between">
+                                <span>Ağırlıq</span> <span>7 ton</span>
+                            </div>
+                            <div class="autoprk-car-features d-flex justify-content-between">
+                                <span>Uzunluq</span> <span>6.05 m</span>
+                            </div>
+                            <div class="autoprk-car-features d-flex justify-content-between">
+                                <span>Tutum</span> <span>35.1 m3</span>
+                            </div>
+                            <div class="autoprk-car-features d-flex justify-content-between">
+                                <span>Hündürlük</span> <span>2.42 m</span>
+                            </div>
+                            <div class="autoprk-car-features d-flex justify-content-between"><span>Plate
+                                    sayı</span> <span>15 ədəd</span></div>
                         </div>
-                        <div class="d-flex flex-wrap gap-4 justify-content-around mb-4">
-                            <div class="services-transport-container p-4">
-                                <div class="w-100"><img src="../assets/media/home/transport.png" alt="transport-icon">
-                                </div>
-                                <p class="d-flex w-100 transport-title my-2">Transport</p>
-                                <p class="w-100 transport-text m-0">Lorem Ipsum is simply dummy text of the printing
-                                    and
-                                    typesetting industry. Lorem Ipsum has been the industry's standard dummy text
-                                    ever
-                                    since the 1500s,</p>
-                            </div>
-                            <div class="services-transport-container p-4">
-                                <div class="w-100"><img src="../assets/media/home/transport.png" alt="transport-icon">
-                                </div>
-                                <p class="d-flex w-100 transport-title my-2">Transport</p>
-                                <p class="w-100 transport-text m-0">Lorem Ipsum is simply dummy text of the printing
-                                    and
-                                    typesetting industry. Lorem Ipsum has been the industry's standard dummy text
-                                    ever
-                                    since the 1500s,</p>
-                            </div>
-                            <div class="services-transport-container p-4">
-                                <div class="w-100"><img src="../assets/media/home/transport.png" alt="transport-icon">
-                                </div>
-                                <p class="d-flex w-100 transport-title my-2">Transport</p>
-                                <p class="w-100 transport-text m-0">Lorem Ipsum is simply dummy text of the printing
-                                    and
-                                    typesetting industry. Lorem Ipsum has been the industry's standard dummy text
-                                    ever
-                                    since the 1500s,</p>
-                            </div>
-                            <div class="services-transport-container p-4">
-                                <div class="w-100"><img src="../assets/media/home/transport.png" alt="transport-icon">
-                                </div>
-                                <p class="d-flex w-100 transport-title my-2">Transport</p>
-                                <p class="w-100 transport-text m-0">Lorem Ipsum is simply dummy text of the printing
-                                    and
-                                    typesetting industry. Lorem Ipsum has been the industry's standard dummy text
-                                    ever
-                                    since the 1500s,</p>
-                            </div>
-                            <div class="services-transport-container p-4">
-                                <div class="w-100"><img src="../assets/media/home/transport.png" alt="transport-icon">
-                                </div>
-                                <p class="d-flex w-100 transport-title my-2">Transport</p>
-                                <p class="w-100 transport-text m-0">Lorem Ipsum is simply dummy text of the printing
-                                    and
-                                    typesetting industry. Lorem Ipsum has been the industry's standard dummy text
-                                    ever
-                                    since the 1500s,</p>
-                            </div>
-                            <div class="services-transport-container p-4">
-                                <div class="w-100"><img src="../assets/media/home/transport.png" alt="transport-icon">
-                                </div>
-                                <p class="d-flex w-100 transport-title my-2">Transport</p>
-                                <p class="w-100 transport-text m-0">Lorem Ipsum is simply dummy text of the printing
-                                    and
-                                    typesetting industry. Lorem Ipsum has been the industry's standard dummy text
-                                    ever
-                                    since the 1500s,</p>
-                            </div>
-                        </div>
-                        <div class="px-4 d-flex justify-content-between mt-4">
-                            <div class="my-auto transport-btn-line"></div>
-                            <button class="transport-all-services-btn">Bütün Xidmətlər</button>
-                            <div class="my-auto transport-btn-line"></div>
-                        </div>
-                    </section>
-                    <section class="container h-auto services-container mt-4 py-4">
-                        <div class="w-100 text-center mb-4 services-container-title d-block">
-                            Avtopark <br>
-                            <div class="mx-auto mt-1" style="width: 60px;height: 3px; background-color: #FBCA11;">
-                            </div>
-                        </div>
-                        <div class="position-relative">
-                            <div class="auto-slide-container ">
-                                <div class="swiper mySwiperAuto">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <div class="auto-slide p-4">
-                                                <img src="../assets/media/home/auto.png" alt="">
-                                                <p class="d-flex justify-content-center">Soyuduculu (5m/5t)</p>
-                                                <div class="d-flex justify-content-between mt-4">
-                                                    <div class="my-auto auto-btn-line"></div>
-                                                    <button class="transport-all-services-btn">Ətraflı</button>
-                                                    <div class="my-auto auto-btn-line"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="auto-slide p-4">
-                                                <img src="../assets/media/home/auto.png" alt="">
-                                                <p class="d-flex justify-content-center">Soyuduculu (5m/5t)</p>
-                                                <div class="d-flex justify-content-between mt-4">
-                                                    <div class="my-auto auto-btn-line"></div>
-                                                    <button class="transport-all-services-btn">Ətraflı</button>
-                                                    <div class="my-auto auto-btn-line"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="auto-slide p-4">
-                                                <img src="../assets/media/home/auto.png" alt="">
-                                                <p class="d-flex justify-content-center">Soyuduculu (5m/5t)</p>
-                                                <div class="d-flex justify-content-between mt-4">
-                                                    <div class="my-auto auto-btn-line"></div>
-                                                    <button class="transport-all-services-btn">Ətraflı</button>
-                                                    <div class="my-auto auto-btn-line"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="auto-slide p-4">
-                                                <img src="../assets/media/home/auto.png" alt="">
-                                                <p class="d-flex justify-content-center">Soyuduculu (5m/5t)</p>
-                                                <div class="d-flex justify-content-between mt-4">
-                                                    <div class="my-auto auto-btn-line"></div>
-                                                    <button class="transport-all-services-btn">Ətraflı</button>
-                                                    <div class="my-auto auto-btn-line"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="auto-button-next position-absolute">﹥</div>
-                            <div class="auto-button-prev position-absolute">﹤</div>
-                        </div>
-                    </section>
+                    </div>
                 </section>
                 <footer class="my-4 footer pt-5">
                     <div class="py-4 gap-5 d-flex flex-wrap justify-content-center">
@@ -324,7 +209,6 @@
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="../assets/js/home.js"></script>
-    <script src="../assets/js/galery.js"></script>
 </body>
 
 </html>

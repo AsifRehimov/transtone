@@ -1,69 +1,69 @@
- function clickStart (event) {
+// function clickStart(event) {
 
-        var elementCompanyOne = document.querySelector('.company-select-one');
-        var hasTagCompanyOne = elementCompanyOne.classList.contains('active'); 
+//     var elementCompanyOne = document.querySelector('.company-select-one');
+//     var hasTagCompanyOne = elementCompanyOne.classList.contains('active');
 
-        var elementCompanyTwo = document.querySelector('.company-select-two');
-        var hasTagCompanyTwo = elementCompanyTwo.classList.contains('active');
-       
-        // var elementCompanyThree = document.querySelector('.company-select-three'); 
-        // var hasTagCompanyThree = elementCompanyThree.classList.contains('active');
+//     var elementCompanyTwo = document.querySelector('.company-select-two');
+//     var hasTagCompanyTwo = elementCompanyTwo.classList.contains('active');
 
-        var targetCompany = document.querySelector('.company-select-link');
+//     // var elementCompanyThree = document.querySelector('.company-select-three'); 
+//     // var hasTagCompanyThree = elementCompanyThree.classList.contains('active');
 
-        
+//     var targetCompany = document.querySelector('.company-select-link');
 
-        var elementServiceOne = document.querySelector('.service-select-one');
-        var hasTagServiceOne = elementServiceOne.classList.contains('active'); 
 
-        var elementServiceTwo = document.querySelector('.service-select-two');
-        var hasTagServiceTwo = elementServiceTwo.classList.contains('active');
 
-        var elementServiceThree = document.querySelector('.service-select-three');
-        var hasTagServiceThree = elementServiceThree.classList.contains('active'); 
+//     var elementServiceOne = document.querySelector('.service-select-one');
+//     var hasTagServiceOne = elementServiceOne.classList.contains('active');
 
-        var targetService = document.querySelector('.service-select-link');
+//     var elementServiceTwo = document.querySelector('.service-select-two');
+//     var hasTagServiceTwo = elementServiceTwo.classList.contains('active');
 
-        if (hasTagCompanyOne || hasTagCompanyTwo) {
-            targetCompany.classList.add('active1');
-        } else {
-            targetCompany.classList.remove('active1');
-            console.log("not");
-        }
-        if (hasTagServiceOne || hasTagServiceTwo || hasTagServiceThree) {
-            targetService.classList.add('active1');
-        } else {
-            targetService.classList.remove('active1');
-        }
+//     var elementServiceThree = document.querySelector('.service-select-three');
+//     var hasTagServiceThree = elementServiceThree.classList.contains('active');
+
+//     var targetService = document.querySelector('.service-select-link');
+
+//     if (hasTagCompanyOne || hasTagCompanyTwo) {
+//         targetCompany.classList.add('active1');
+//     } else {
+//         targetCompany.classList.remove('active1');
+//         console.log("not");
+//     }
+//     if (hasTagServiceOne || hasTagServiceTwo || hasTagServiceThree) {
+//         targetService.classList.add('active1');
+//     } else {
+//         targetService.classList.remove('active1');
+//     }
+
+// }
+// var navItems = document.getElementsByClassName('nav-item');
+// for (var i = 0; i < navItems.length; i++) {
+//     navItems[i].addEventListener('click', clickStart);
+// }
+
+function toggleServices() {
+    var servicesDropdown = document.getElementById("servicesDropdown");
+    var elementServiceOne = document.querySelector('.select-services-item');
+    var responsiveClass = elementServiceOne.classList.contains('d-none');
+    if (responsiveClass) {
+        servicesDropdown.classList.remove("d-none");
+    } else {
+        servicesDropdown.classList.add("d-none");
 
     }
-    var navItems = document.getElementsByClassName('nav-item');
-    for (var i = 0; i < navItems.length; i++) {
-        navItems[i].addEventListener('click', clickStart);
-    }
+}
+function toggleCompany() {
+    var servicesDropdown = document.getElementById("companyDropdown");
+    var elementServiceOne = document.querySelector('.select-companies-item');
+    var responsiveClass = elementServiceOne.classList.contains('d-none');
+    if (responsiveClass) {
+        servicesDropdown.classList.remove("d-none");
+    } else {
+        servicesDropdown.classList.add("d-none");
 
-    function toggleServices() {
-        var servicesDropdown = document.getElementById("servicesDropdown");
-        var elementServiceOne = document.querySelector('.select-services-item');
-        var responsiveClass = elementServiceOne.classList.contains('d-none'); 
-        if (responsiveClass) {
-            servicesDropdown.classList.remove("d-none");
-        } else {
-            servicesDropdown.classList.add("d-none");
-
-        }
     }
-    function toggleCompany() {
-        var servicesDropdown = document.getElementById("companyDropdown");
-        var elementServiceOne = document.querySelector('.select-companies-item');
-        var responsiveClass = elementServiceOne.classList.contains('d-none'); 
-        if (responsiveClass) {
-            servicesDropdown.classList.remove("d-none");
-        } else {
-            servicesDropdown.classList.add("d-none");
-
-        }
-    }
+}
 
 // home body 
 
@@ -85,8 +85,40 @@ var swiper = new Swiper(".mySwiperAuto", {
     slidesPerView: 3,
     spaceBetween: 30,
     navigation: {
-      nextEl: ".auto-button-next",
-      prevEl: ".auto-button-prev",
+        nextEl: ".auto-button-next",
+        prevEl: ".auto-button-prev",
     },
 
-  });
+});
+
+// function includeHTML() {
+//     var headers = document.querySelectorAll("[data-include]");
+//     headers.forEach(function (header) {
+//         var filePath = header.getAttribute("data-include");
+//         fetch(filePath)
+//             .then(response => response.text())
+//             .then(data => {
+//                 header.innerHTML = data;
+//             });
+//     });
+// }
+
+// // Sayfa yüklendiğinde includeHTML fonksiyonunu çağır
+// document.addEventListener("DOMContentLoaded", includeHTML);
+
+// function includeHTML() {
+//     fetchFileAndInject('../../pages/autopark.html', 'autopark');
+//     // fetchFileAndInject('body.html', 'body');
+//     // fetchFileAndInject('footer.html', 'footer');
+// }
+
+// function fetchFileAndInject(filePath, containerId) {
+//     fetch(filePath)
+//         .then(response => response.text())
+//         .then(data => {
+//             document.getElementById(containerId).innerHTML = data;
+//         });
+// }
+
+// // Sayfa yüklendiğinde includeHTML fonksiyonunu çağır
+// document.addEventListener("DOMContentLoaded", includeHTML);
