@@ -81,9 +81,20 @@ var swiper = new Swiper(".mySwiperHome", {
 });
 
 var swiper = new Swiper(".mySwiperAuto", {
-    watchSlidesProgress: true,
-    slidesPerView: 3,
-    spaceBetween: 30,
+    // watchSlidesProgress: true,
+    slidesPerView: 1,
+    spaceBetween: 10,
+    loop: true,
+    breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 30,
+        },
+        992: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        }
+      },
     navigation: {
         nextEl: ".auto-button-next",
         prevEl: ".auto-button-prev",
